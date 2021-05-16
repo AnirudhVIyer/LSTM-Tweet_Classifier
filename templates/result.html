@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Diabetes Predictor</title>
+		<link rel="shortcut icon" type="image/icon" href="../images/favicon.ico"/>
+		
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+		<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	</head>
+
+    <>
+
+        <!-- Website Title -->
+		<div class="container" style="background-color: rgb(13, 13, 59);">
+            <h2 class='container-heading'><span class="heading_font">Disaster Tweet Classifier</span></h2>
+            <div class='description'>
+    			<p>A NLP App to recognize tweets related to disasters</p>
+    		</div>
+    	</div>
+
+		<!-- Result -->
+		<div class="results">
+			{% if prediction==1 %}
+				<h1>Prediction: <span class='danger'> tweet about disaster.</span></h1>
+				
+			{% elif prediction==0 %}
+				<h1>Prediction: <span class='safe'>general tweet.</span></h1>
+				
+			{% endif %}
+
+
+		
+			<form action="/return" method="GET">
+				<input type="submit" class="mybutton" value="Return">
+			</form>
+
+			
+		</div>
+
+
+		
+        <div class='footer'>
+            Hey ya'll, hope you like this app. For the complete model checkout my profile <i class="fa fa-github" aria-hidden="false">AnirudhVIyer</i>
+
+        </div>
+		
+		
+
+
+
+	</body>
+</html>

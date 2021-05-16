@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Tweet Classifer</title>
+        <link rel="shortcut icon" type="image/icon" href="../images/favicon.ico"/>
+       
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Website Title -->
+    	<div class="container", style="background-color: rgb(13, 13, 59);">
+            <h2 class='container-heading'><span class="heading_font">Disaster Tweet Classifier</span></h2>
+            <div class='description'>
+              <p>A NLP App to recognize tweets related to disasters</p>
+    		</div>
+    	</div>
+
+        <!-- Text Area -->
+    	<class class="ml-container">
+    		<div class='container'>
+                <form action="{{ url_for('predict') }}" method="POST">
+
+                  <label for="tweet" style="font-size: larger; font-weight: 300; border-bottom: 0in;">Tweet</label>
+
+                  <br>
+                  <br>
+                  <br>
+                  <textarea id="tweet" name="tweet" rows="7" cols="50">
+                
+                </textarea>
+                                                       
+                  <br>
+                  <br>
+
+
+
+        		<input type="submit" class="mybutton" value="Check review">
+        	</form>
+    	</div>
+
+       <i class="fa fa-twitter" aria-hidden="false" size>tweet away!</i>
+       
+       <br>
+       <br>
+    
+
+
+        </class>
+
+        <div class='footer'>
+            Hey ya'll, hope you like this app. For the complete model checkout my profile <i class="fa fa-github" aria-hidden="false">AnirudhVIyer</i>
+
+        </div>
+
+
+    </body>
+</html>
