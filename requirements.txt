@@ -10,3 +10,4 @@ gunicorn==19.9.0
 matplotlib>=1.4.3
 pandas>=0.19
 nltk
+python-3.7.10
